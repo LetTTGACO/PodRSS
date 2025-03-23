@@ -41,7 +41,8 @@ next-env.d.ts
 # wrangler
 .wrangler
 
-# dev.vars
+# env
 .dev.vars
 
 .idea
+__test__/**
