@@ -36,7 +36,6 @@ export class PodRSSWorkflow extends WorkflowEntrypoint<CloudflareEnv, Params> {
       const runEnv = this.env.NEXTJS_ENV || 'production'
       const isDev = runEnv === 'development'
       const today = event.payload.today || dayjs().startOf('day').format('YYYY-MM-DD')
-      // const today = '2025-03-21'
       const rssList = [
         'https://lutaonan.com/rss.xml',
         'https://blog.ursb.me/feed.xml',
@@ -47,6 +46,7 @@ export class PodRSSWorkflow extends WorkflowEntrypoint<CloudflareEnv, Params> {
         'https://web-design-weekly.com/feed/',
         'https://cprss.s3.amazonaws.com/react.statuscode.com.xml',
         'https://cprss.s3.amazonaws.com/nodeweekly.com.xml',
+        'https://feed.miantiao.me/',
       ]
 
       if (!rssList.length) {

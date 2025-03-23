@@ -62,7 +62,7 @@ export function ArticleCard({ article, staticHost = '', showSummary = false, sho
             <TabsContent value="podcast" className="prose prose-sm prose-zinc max-w-none whitespace-pre-line py-4">
               {article.podcastContent}
             </TabsContent>
-            <TabsContent value="references" className="py-4">
+            <TabsContent value="" className="py-4">
               {article.stories?.map(story => (
                 <div key={story.id} className="flex items-center gap-2 py-1 group">
                   <Link
@@ -73,15 +73,6 @@ export function ArticleCard({ article, staticHost = '', showSummary = false, sho
                     target="_blank"
                   >
                     {story.title}
-                  </Link>
-                  <Link
-                    href={`https://news.ycombinator.com/item?id=${story.id}`}
-                    className="text-xs px-2 py-1 rounded-md bg-zinc-100 text-zinc-500 hover:bg-zinc-200 transition-all"
-                    title="评论"
-                    rel="nofollow"
-                    target="_blank"
-                  >
-                    评论
                   </Link>
                 </div>
               ))}

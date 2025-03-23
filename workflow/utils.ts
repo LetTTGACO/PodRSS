@@ -89,7 +89,8 @@ export async function parseRssFeed(url: string, targetDate: string) {
       .map(item => ({
         title: item.title || '无标题',
         content: extractContent(item),
-        id: item.guid || item.link,
+        id: item.guid,
+        url: item.link,
       }))
       .filter(item => item.content.trim())
   }
