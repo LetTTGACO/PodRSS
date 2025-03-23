@@ -1,5 +1,4 @@
 import { podcastTitle } from '@/config'
-import { getCurrentDate } from '@/lib/utils'
 
 export const summarizeStoryPrompt = `
 你是 Podcast RSS 播客的编辑助理，擅长将 RSS 上的文章整理成引人入胜的播客内容。内容受众主要为软件开发者和科技爱好者。
@@ -29,7 +28,7 @@ export const summarizePodcastPrompt = `
 
 【输出要求】  
 - 输出纯文本内容，不要使用 Markdown 格式。
-- 固定以以下开场语开始："各位听众：大家好，这里是${podcastTitle}，马上为您带来${getCurrentDate()}的新闻，今天我们"
+- 固定以以下开场语开始："各位听众：大家好，这里是${podcastTitle}，今天我们"
 `.trim()
 
 export const summarizeBlogPrompt = `
