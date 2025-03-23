@@ -67,7 +67,7 @@ export function ArticleCard({ article, staticHost = '', showSummary = false, sho
                 <div key={story.id} className="flex items-center gap-2 py-1 group">
                   <Link
                     href={story.url ?? ''}
-                    className="text-sm text-zinc-800 hover:text-zinc-950 transition-colors line-clamp-1 flex-1 font-bold hover:underline"
+                    className="text-zinc-800 hover:text-zinc-950 transition-colors line-clamp-1 flex-1 font-bold hover:underline"
                     title={story.title}
                     rel="nofollow"
                     target="_blank"
