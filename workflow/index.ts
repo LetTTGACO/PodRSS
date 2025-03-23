@@ -240,13 +240,13 @@ export class PodRSSWorkflow extends WorkflowEntrypoint<CloudflareEnv, Params> {
 
       console.info('save content to kv success')
       await step.do('send message to wechat', retryConfig, async () => {
-        await fetch(`${this.env.WECHAT_WEBHOOK}HackNews每日播报生成成功`).catch()
+        await fetch(`${this.env.WECHAT_WEBHOOK}PodcastRSS每日播报生成成功`).catch()
         return 'OK'
       })
     }
     catch (error: any) {
       await step.do('send message to wechat', retryConfig, async () => {
-        await fetch(`${this.env.WECHAT_WEBHOOK}HackNews每日播报生成失败`).catch()
+        await fetch(`${this.env.WECHAT_WEBHOOK}PodcastRSS每日播报生成失败`).catch()
         return 'OK'
       })
       throw error
