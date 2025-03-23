@@ -4,11 +4,11 @@
 
 ---
 
-预览地址: <https://podrss.1874.cool>
+预览地址: <https://podrss.1874.run>
 
-订阅地址: <https://podrss.1874.cool/rss.xml>
+订阅地址: <https://podrss.1874.run/rss.xml>
 
-博客版订阅地址: <https://podrss.1874.cool/blog.xml>
+博客版订阅地址: <https://podrss.1874.run/blog.xml>
 
 ## 主要特性
 
