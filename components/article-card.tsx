@@ -62,7 +62,7 @@ export function ArticleCard({ article, staticHost = '', showSummary = false, sho
             <TabsContent value="podcast" className="prose prose-sm prose-zinc max-w-none whitespace-pre-line py-4">
               {article.podcastContent}
             </TabsContent>
-            <TabsContent value="" className="py-4">
+            <TabsContent value="references" className="py-4">
               {article.stories?.map(story => (
                 <div key={story.id} className="flex items-center gap-2 py-1 group">
                   <Link
